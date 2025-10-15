@@ -50,8 +50,11 @@ Các package chính có trong `backend/requirements.txt`:
 
 ---
 
+
+## 🚀 3. Hình ảnh các chức năng
+
 <p align="center">
-<img src=" " alt="Chức năng đăng nhập" width="700"/>
+<img src="https://github.com/Tank97king/Nhan_dien_phuong_tien_giao_thong_va_bien_so_xe/blob/main/Nhan_dien_phuong_tien_giao_thong_va_bien_so_xe/Nh%E1%BA%ADn%20di%E1%BB%87n%20ph%C6%B0%C6%A1ng%20ti%E1%BB%87n%20giao%20th%C3%B4ng/%E1%BA%A2nh/Screenshot%202025-10-15%20151537.png?raw=true " alt="Chức năng đăng nhập" width="700"/>
 </p>
 
 <p align="center">
@@ -59,7 +62,7 @@ Các package chính có trong `backend/requirements.txt`:
 </p>
 
 <p align="center">
-<img src="https://github.com/Tank97king/LapTrinhMang/blob/main/CHAT%20TCP/%E1%BA%A2nh/%C4%90%C4%83ng%20K%C3%BD.png?raw=true" alt="Chức năng đăng ký" width="700"/>
+<img src="https://github.com/Tank97king/Nhan_dien_phuong_tien_giao_thong_va_bien_so_xe/blob/main/Nhan_dien_phuong_tien_giao_thong_va_bien_so_xe/Nh%E1%BA%ADn%20di%E1%BB%87n%20ph%C6%B0%C6%A1ng%20ti%E1%BB%87n%20giao%20th%C3%B4ng/%E1%BA%A2nh/Screenshot%202025-10-06%20190231.png?raw=true" alt="Chức năng đăng ký" width="700"/>
 </p>
 <p align="center">
   <em> Hình 2: Chức năng nhận diện bằng video </em>
@@ -67,24 +70,18 @@ Các package chính có trong `backend/requirements.txt`:
 
 
 <p align="center">
-  <img src="https://github.com/Tank97king/LapTrinhMang/blob/main/CHAT%20TCP/%E1%BA%A2nh/Giao%20di%E1%BB%87n.png?raw=true" alt="Hệ thống thông báo tham gia thành công" width="800"/>
+  <img src="https://github.com/Tank97king/Nhan_dien_phuong_tien_giao_thong_va_bien_so_xe/blob/main/Nhan_dien_phuong_tien_giao_thong_va_bien_so_xe/Nh%E1%BA%ADn%20di%E1%BB%87n%20ph%C6%B0%C6%A1ng%20ti%E1%BB%87n%20giao%20th%C3%B4ng/%E1%BA%A2nh/Screenshot%202025-10-15%20151730.png?raw=true" alt="Hệ thống thông báo tham gia thành công" width="800"/>
 </p>
 <p align="center">
   <em> Hình 3: Chức năng nhận diện bằng ảnh .</em>
 </p>
 
 <p align="center">
-  <img src="https://github.com/Tank97king/LapTrinhMang/blob/main/CHAT%20TCP/%E1%BA%A2nh/Ch%E1%BB%A9c%20N%C4%83ng%20Chat.png?raw=true" alt="Giao diện hai người chat với nhau" width="800"/>
+  <img src="https://github.com/Tank97king/Nhan_dien_phuong_tien_giao_thong_va_bien_so_xe/blob/main/Nhan_dien_phuong_tien_giao_thong_va_bien_so_xe/Nh%E1%BA%ADn%20di%E1%BB%87n%20ph%C6%B0%C6%A1ng%20ti%E1%BB%87n%20giao%20th%C3%B4ng/%E1%BA%A2nh/Screenshot%202025-10-15%20151803.png?raw=true" alt="Giao diện hai người chat với nhau" width="800"/>
 </p>
 <p align="center">
   <em> Hình 4: Chức năng nhận diện bằng camera </em>
 </p>
-
-<p align="center">
-  <img src="https://github.com/Tank97king/LapTrinhMang/blob/main/CHAT%20TCP/%E1%BA%A2nh/ch%E1%BB%A9c%20n%C4%83ng%20g%E1%BB%ADi%20%E1%BA%A3nh.png?raw=true" alt="Bộ sưu tập 4" width="800"/>
-</p>
-<p align="center">
-
 
 
 
@@ -224,3 +221,4 @@ Email: dinhthethanh73@gmail.com.
 © 2025 AIoTLab, Faculty of Information Technology, DaiNam University. All rights reserved.
 
 ---
+
