@@ -108,7 +108,7 @@ Các package chính có trong `backend/requirements.txt`:
 
 Dưới đây là các bước cấu hình và chạy dự án trên Windows (sử dụng PowerShell). Giả định bạn đang ở thư mục gốc của dự án (chứa `backend` và `frontend`).
 
-### 3.1. Chuẩn bị môi trường Python
+### 4.1. Chuẩn bị môi trường Python
 
 1. Cài Python 3.10+ nếu chưa có. Kiểm tra:
 
@@ -139,11 +139,11 @@ pip install -r backend\requirements.txt
 
 > Lưu ý: Một số package (như `opencv-python`, `easyocr`, `ultralytics`) có thể cần trình biên dịch hoặc phụ thuộc hệ thống; nếu cài bị lỗi, thử cài từng package riêng lẻ và kiểm tra thông báo lỗi.
 
-### 3.2. Chuẩn bị model
+### 4.2. Chuẩn bị model
 
 Các file model (ví dụ `yolov8n.pt`, `LP_detector.pt`, `LP_ocr.pt`, v.v.) đã có trong `backend/app/models` và thư mục cấp cao `backend`. Bạn có thể thay thế hoặc thêm model mới vào thư mục này.
 
-### 3.3. Cấu hình MongoDB
+### 4.3. Cấu hình MongoDB
 
 Hệ thống mặc định sử dụng MongoDB tại `mongodb://localhost:27017` và database tên `traffic`. Có hai tùy chọn:
 
@@ -162,7 +162,7 @@ Bạn cũng có thể thiết lập biến môi trường để thay đổi URI 
 - MONGODB_URI (ví dụ: mongodb://user:pass@host:27017)
 - MONGODB_DB (mặc định: traffic)
 
-### 3.4. Chạy backend (API + serve frontend)
+### 4.4. Chạy backend (API + serve frontend)
 
 1. Vào thư mục `backend` và chạy Uvicorn:
 
@@ -177,13 +177,13 @@ python -m uvicorn app.main:app --host 127.0.0.1 --port 8000 --reload
 - Giao diện frontend: http://127.0.0.1:8000/  (FastAPI sẽ serve thư mục `frontend`)
 - API health: http://127.0.0.1:8000/health
 
-### 3.5. Sử dụng giao diện
+### 4.5. Sử dụng giao diện
 
 - Tải ảnh/video lên bằng nút "Chọn file" và bấm "Tải" để gửi lên endpoint `/analyze/image` hoặc `/analyze/video`.
 - Bật/tắt camera bằng nút "Bật/tắt camera" (ứng dụng sẽ gọi `/camera/start`, `/camera/stream` để stream và `/camera/analysis` để xem kết quả phân tích liên tục).
 - Kết quả phân tích (danh sách phương tiện + biển số) sẽ hiển thị ở sidebar, và ảnh kết quả có thể được lưu trong `frontend/analysis_results` nếu backend cấu hình `detector.save_dir`.
 
-### 3.6. Các lệnh API hữu ích
+### 4.6. Các lệnh API hữu ích
 
 Tải ảnh (curl ví dụ):
 
@@ -221,4 +221,5 @@ Email: dinhthethanh73@gmail.com.
 © 2025 AIoTLab, Faculty of Information Technology, DaiNam University. All rights reserved.
 
 ---
+
 
