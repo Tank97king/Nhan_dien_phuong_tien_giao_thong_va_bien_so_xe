@@ -1,6 +1,28 @@
-# Nhận diện phương tiện giao thông và biển số xe
 
-## 1. Giới thiệu hệ thống
+<h2 align="center">
+    <a href="https://dainam.edu.vn/vi/khoa-cong-nghe-thong-tin">
+    🎓 Faculty of Information Technology (DaiNam University)
+    </a>
+</h2>
+<h2 align="center">
+   Nhận diện phương tiện giao thông và biển số xe
+</h2>
+<div align="center">
+    <p align="center">
+      <img src="https://github.com/Tank97king/LapTrinhMang/blob/main/CHAT%20TCP/%E1%BA%A2nh/aiotlab_logo.png?raw=true" alt="AIoTLab Logo" width="170"/>
+      <img src="https://github.com/Tank97king/LapTrinhMang/blob/main/CHAT%20TCP/%E1%BA%A2nh/fitdnu_logo.png?raw=true" alt="FITDNU Logo" width="180"/>
+      <img src="https://github.com/Tank97king/LapTrinhMang/blob/main/CHAT%20TCP/%E1%BA%A2nh/dnu_logo.png?raw=true" alt="DaiNam University Logo" width="200"/>
+    </p>
+
+[![AIoTLab](https://img.shields.io/badge/AIoTLab-green?style=for-the-badge)](https://www.facebook.com/DNUAIoTLab)
+[![Faculty of Information Technology](https://img.shields.io/badge/Faculty%20of%20Information%20Technology-blue?style=for-the-badge)](https://dainam.edu.vn/vi/khoa-cong-nghe-thong-tin)
+[![DaiNam University](https://img.shields.io/badge/DaiNam%20University-orange?style=for-the-badge)](https://dainam.edu.vn)
+
+</div>
+
+
+
+## 📖 1. Giới thiệu hệ thống
 
 Hệ thống này phát hiện phương tiện giao thông (ô tô, xe máy) và trích xuất biển số từ ảnh hoặc video. Ứng dụng gồm hai phần chính:
 - Backend: REST API xây dựng bằng FastAPI, xử lý ảnh/video, nhận diện phương tiện và biển số, lưu kết quả vào MongoDB, và phục vụ giao diện frontend.
@@ -10,7 +32,7 @@ Mục tiêu: cung cấp công cụ nhận diện nhanh trên máy cá nhân ho�
 
 ---
 
-## 2. Công nghệ sử dụng
+## 🔧 2. Công nghệ sử dụng
 
 - Ngôn ngữ: Python 3.10+
 - Web API: FastAPI
@@ -28,7 +50,64 @@ Các package chính có trong `backend/requirements.txt`:
 
 ---
 
-## 3. Hướng dẫn cài đặt và sử dụng (Windows - PowerShell)
+<p align="center">
+<img src=" " alt="Chức năng đăng nhập" width="700"/>
+</p>
+
+<p align="center">
+  <em>Hình 1: Giao diện trang chủ  </em>
+</p>
+
+<p align="center">
+<img src="https://github.com/Tank97king/LapTrinhMang/blob/main/CHAT%20TCP/%E1%BA%A2nh/%C4%90%C4%83ng%20K%C3%BD.png?raw=true" alt="Chức năng đăng ký" width="700"/>
+</p>
+<p align="center">
+  <em> Hình 2: Chức năng nhận diện bằng video </em>
+</p>
+
+
+<p align="center">
+  <img src="https://github.com/Tank97king/LapTrinhMang/blob/main/CHAT%20TCP/%E1%BA%A2nh/Giao%20di%E1%BB%87n.png?raw=true" alt="Hệ thống thông báo tham gia thành công" width="800"/>
+</p>
+<p align="center">
+  <em> Hình 3: Chức năng nhận diện bằng ảnh .</em>
+</p>
+
+<p align="center">
+  <img src="https://github.com/Tank97king/LapTrinhMang/blob/main/CHAT%20TCP/%E1%BA%A2nh/Ch%E1%BB%A9c%20N%C4%83ng%20Chat.png?raw=true" alt="Giao diện hai người chat với nhau" width="800"/>
+</p>
+<p align="center">
+  <em> Hình 4: Chức năng nhận diện bằng camera </em>
+</p>
+
+<p align="center">
+  <img src="https://github.com/Tank97king/LapTrinhMang/blob/main/CHAT%20TCP/%E1%BA%A2nh/ch%E1%BB%A9c%20n%C4%83ng%20g%E1%BB%ADi%20%E1%BA%A3nh.png?raw=true" alt="Bộ sưu tập 4" width="800"/>
+</p>
+<p align="center">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## 📝 4. Hướng dẫn cài đặt và sử dụng
 
 Dưới đây là các bước cấu hình và chạy dự án trên Windows (sử dụng PowerShell). Giả định bạn đang ở thư mục gốc của dự án (chứa `backend` và `frontend`).
 
@@ -137,37 +216,11 @@ curl -X POST "http://127.0.0.1:8000/clear"
 
 ---
 
-## 4. Lưu ý vận hành và gợi ý
+## 5.👤Thông tin liên hệ  
+Họ tên: Đinh Thế Thành.  
+Lớp: CNTT 16-01.  
+Email: dinhthethanh73@gmail.com.
 
-- Camera: Trên Windows, backend dùng `cv2.CAP_DSHOW` để mở camera laptop. Nếu không kết nối được, kiểm tra quyền truy cập Camera trong Windows Settings, ứng dụng khác đang dùng camera, hoặc driver camera.
-- GPU: Nếu muốn dùng GPU để tăng tốc inference, cài thêm các driver và phiên bản torch/ultralytics phù hợp; hiện requirements không cố định torch — nếu cần GPU, hãy cài `torch`/`cuda` tương ứng trước khi cài `ultralytics`.
-- Hiệu suất: Xử lý video có thể nặng; có thể điều chỉnh số khung (stride) và số khung tối đa (`VIDEO_STRIDE`, `VIDEO_MAX_FRAMES`) thông qua biến môi trường.
-- Bảo mật: Mặc định API cho phép CORS từ mọi nguồn (allow_origins=["*"]). Nếu triển khai thật, điều chỉnh lại cài đặt CORS và xác thực.
-
----
-
-## 5. Cấu trúc dự án (tóm tắt)
-
-- backend/
-  - app/
-    - main.py         # entrypoint FastAPI
-    - detector.py     # logic nhận diện
-    - db.py           # MongoStore
-    - schemas.py      # Pydantic models
-    - models/         # model weights
-  - requirements.txt
-- frontend/
-  - index.html
-  - main.js
-  - styles.css
-  - analysis_results/  # nơi backend lưu ảnh phân tích (nếu bật)
-
+© 2025 AIoTLab, Faculty of Information Technology, DaiNam University. All rights reserved.
 
 ---
-
-Nếu bạn muốn, tôi có thể:
-- Thêm phần ví dụ kết quả JSON từ API.
-- Tạo script bắt đầu (PowerShell `start.ps1`) để tự động kích hoạt venv và khởi chạy server.
-- Cập nhật README theo môi trường bạn muốn (Docker, Linux, hay deploy cloud).
-
-Hoàn thành việc tạo README. Bước tiếp theo: đánh dấu todo hoàn tất.
